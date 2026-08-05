@@ -1,8 +1,14 @@
 {
-  "name": "@springmsa/api-contract",
-  "private": true,
+  "name": "@hyunmyungchoi/api-contract",
+  "private": false,
   "version": "0.1.0",
   "type": "module",
+  "files": ["src"],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": "https://github.com/hyunmyungchoi/spring-msa-frontend-common.git",
   "exports": {
     ".": "./src/index.ts"
   },

@@ -1,1 +1,1 @@
-export type { MsaApiErrorBody as UserApiErrorBody } from "@springmsa/api-contract";
+export type { MsaApiErrorBody as UserApiErrorBody } from "@hyunmyungchoi/api-contract";

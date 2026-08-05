@@ -1,0 +1,4 @@
+packages:
+  - "api-contract"
+  - "member-common"
+  - "admin-common"

@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "2.11.2",
-    "@hyunmyungchoi/api-contract": "workspace:*",
+    "@hyunmyungchoi/api-contract": "0.1.0",
     "axios": "1.18.0",
     "react": "19.2.6",
     "react-redux": "9.3.0",
@@ -33,3 +33,4 @@
     "@types/react": "19.2.14"
   }
 }
+

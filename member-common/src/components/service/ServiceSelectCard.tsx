@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 type ServiceSelectCardProps = {
     to: string;
     label: string;
@@ -8,11 +6,13 @@ type ServiceSelectCardProps = {
 
 // Renders a service navigation tile.
 function ServiceSelectCard({ to, label, title }: ServiceSelectCardProps) {
+    const href = to === "/" || to.endsWith("/") ? to : `${to}/`;
+
     return (
-        <Link className="service-tile service-link" to={to}>
+        <a className="service-tile service-link" href={href}>
             <span>{label}</span>
             <strong>{title}</strong>
-        </Link>
+        </a>
     );
 }
 

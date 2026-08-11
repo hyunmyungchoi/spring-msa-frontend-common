@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom'
-
 type AdminManageSelectCardProps = {
   to: string
   label: string
@@ -8,11 +6,13 @@ type AdminManageSelectCardProps = {
 
 // Renders an admin management navigation tile.
 function AdminManageSelectCard({ to, label, title }: AdminManageSelectCardProps) {
+  const href = to === '/' || to.endsWith('/') ? to : `${to}/`
+
   return (
-    <Link className="admin-service-tile admin-service-link" to={to}>
+    <a className="admin-service-tile admin-service-link" href={href}>
       <span>{label}</span>
       <strong>{title}</strong>
-    </Link>
+    </a>
   )
 }
 
